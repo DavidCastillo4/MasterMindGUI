@@ -10,7 +10,7 @@ function drag(ev, e) {
 function drop(ev) {
   let id = ev.dataTransfer.getData("id");
   let sourceId = ev.dataTransfer.getData("sourceId");
-  let targetId = ev.target.id;  
+  let targetId = ev.target.id;
   if (id != '' && sourceId == 'marbleBox') {
     let guessDiv = document.getElementById(targetId);
     let guessCount = guessDiv.childNodes.length;
@@ -52,8 +52,12 @@ let checkUserGuess = (e, targetId) => {
   let msg;
   if (positionColor == 4) { msg = "Winner!!!" }
   else {
-    msg = positionColor + ',' + color;
-    showNextGuess(targetId)
+
+    if (targetId == "g10") { msg = "Sorry! Try Again."; }
+    else {
+      msg = positionColor + ',' + color;
+      showNextGuess(targetId)
+    }
   };
   p.innerHTML = msg;
 }

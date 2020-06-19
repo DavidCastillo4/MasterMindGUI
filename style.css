@@ -18,10 +18,10 @@ div {margin: 0px 10px 0px 10px;}
   height: 40px;
   width: 50px;
   height: 40px;
-  width: 40px;
-  background-color: #bbb;
+  width: 40px;  
   border-radius: 50%;
   display: inline-block;
+  border: 0px none white
 }
 
 #m1 {background-color: red;}
@@ -39,9 +39,9 @@ section div {
   align-items: center; 
 }  
 
-section p {    
+section p {        
   height: 50px;
-  margin: 0px 20px 0px 20px;  
+  margin: 0px 20px 0px 20px;    
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +50,8 @@ section p {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 section {visibility: hidden;}
 
