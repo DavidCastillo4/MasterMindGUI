@@ -87,3 +87,5 @@ let getGuesses = (rod) => {
 let newGame = () => {
   window.location.reload();
 }
+
+alert('View Console for solution')
