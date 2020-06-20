@@ -10,8 +10,8 @@ function drag(ev, e) {
 function drop(ev) {
   let id = ev.dataTransfer.getData("id");
   let sourceId = ev.dataTransfer.getData("sourceId");
-  let targetId = ev.target.id;
-  if (id != '' && sourceId == 'marbleBox' && targetId != 'marbleBox') {
+  let targetId = ev.target.id;  
+  if (id != '' && sourceId == 'marbleBox' && targetId.charAt(0) != 'm') {
     let guessDiv = document.getElementById(targetId);
     let guessCount = guessDiv.childNodes.length;
     if (guessCount < 4) {
