@@ -11,8 +11,7 @@ function drop(ev) {
   let id = ev.dataTransfer.getData("id");
   let sourceId = ev.dataTransfer.getData("sourceId");
   let targetId = ev.target.id;  
-  if (id != '' && sourceId == 'marbleBox' && targetId.charAt(0) == 'g') {
-    console.log(targetId.charAt(0));
+  if (id != '' && sourceId == 'marbleBox' && targetId.charAt(0) == 'g') {    
     let guessDiv = document.getElementById(targetId);
     let guessCount = guessDiv.childNodes.length;
     if (guessCount < 4) {
