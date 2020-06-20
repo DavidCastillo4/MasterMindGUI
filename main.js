@@ -1,3 +1,5 @@
+'use strict'
+
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -45,6 +47,7 @@ let checkUserGuess = (e, targetId) => {
   let userGuess = getGuesses(e);
   let p = e.nextElementSibling;
   let positionColor = 0, color = 0;
+  let i;
   for (i in userGuess) {
     if (userGuess[i] == cpuGuess[i]) { positionColor += 1 }
     if (cpuGuess.some(g => g == userGuess[i])) { color += 1 }
