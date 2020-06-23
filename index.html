@@ -9,7 +9,10 @@
 
 <body>
 
-  <button onclick="newGame()">Start New Game</button><br><br>
+  <button onclick="newGame()">New Game</button>
+  <div id="code">Hover to Cheat<p id="secret"></p>
+  </div>
+  <br><br>
 
   <div id="marbleBox">
     <div id="m1" class="marble" onclick="moveMarble(this)"></div>
@@ -18,7 +21,7 @@
     <div id="m4" class="marble" onclick="moveMarble(this)"></div>
   </div>
 
-  <section id="s1">
+  <section>
     <p>Guess #1</p>
     <div id="g1"></div>
     <p></p>
@@ -77,8 +80,6 @@
     <div id="g10"></div>
     <p></p>
   </section>
-
-
 
   <script src="main.js"></script>
 </body>
