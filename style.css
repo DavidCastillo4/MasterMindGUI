@@ -14,14 +14,15 @@ div {margin: 0px 10px 0px 10px;}
   flex-direction: row;  
 }
 
-#m1, #m2, #m3, #m4 {
+
+.marble  {
   height: 40px;
   width: 50px;
   height: 40px;
   width: 40px;  
   border-radius: 50%;
   display: inline-block;
-  border: 0px none white
+  border: 0px none white;
 }
 
 #m1 {background-color: red;}
@@ -57,3 +58,14 @@ section {visibility: hidden;}
 
 #s1 {visibility: visible;}
 
+.marble  {
+  height: 40px;
+  width: 50px;
+  height: 40px;
+  width: 40px;  
+  border-radius: 50%;
+  display: inline-block;
+  border: 0px none white;
+  background-color: red;
+
+}
