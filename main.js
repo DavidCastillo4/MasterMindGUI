@@ -124,9 +124,9 @@ document.addEventListener("drop", function (event) {
   }
 });
 
+document.getElementById("secret").innerHTML=cpuGuess;
+
 let newGame = () => {
   window.location.reload();
 };
-
-alert('View Console for solution')
 
