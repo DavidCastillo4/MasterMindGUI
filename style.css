@@ -60,11 +60,3 @@ section:first-of-type {visibility: visible;}
 
 #code {float: right;}
 
-#secret {
-  display: none;
-  background-color: lightgoldenrodyellow;  
-}
-
-#code:hover #secret {
-  display: block;
-}

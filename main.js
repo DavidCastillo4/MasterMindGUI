@@ -124,7 +124,9 @@ document.addEventListener("drop", function (event) {
   }
 });
 
-document.getElementById("secret").innerHTML=cpuGuess;
+let displayCode=(e)=> {  
+  e.innerHTML = cpuGuess;
+}
 
 let newGame = () => {
   window.location.reload();
